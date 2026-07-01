@@ -22,9 +22,13 @@
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
                                 <connections>
-                                    <action selector="incrementCounter" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWI-96-IZs"/>
+                                    <action selector="incrementButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWI-96-IZs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZX-58-qb8">
@@ -40,7 +44,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="minus" catalog="system"/>
                                 <connections>
-                                    <action selector="decrementCounter" destination="BYZ-38-t0r" eventType="touchUpInside" id="87O-PU-bIs"/>
+                                    <action selector="decrementButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="87O-PU-bIs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJe-8p-6l2">
@@ -52,8 +56,8 @@
                                     <backgroundConfiguration key="background" image="Reset" imageContentMode="scaleAspectFill"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="incrementCounter" destination="BYZ-38-t0r" eventType="touchUpInside" id="uMx-uV-2oU"/>
-                                    <action selector="resetCounter" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrp-d8-FOW"/>
+                                    <action selector="incrementButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="uMx-uV-2oU"/>
+                                    <action selector="resetCounterButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrp-d8-FOW"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="История изменений:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w9J-ar-fZC">
